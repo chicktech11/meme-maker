@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hlupico.mememaker.NewMemeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Choose A Picture"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/from_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="From Gallery"
+            android:layout_weight="1"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Take A Photo"
+            android:layout_weight="1"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_height="134dp"
+        app:srcCompat="@drawable/shut_up_and_take_my_money" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Save"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/save_button"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
