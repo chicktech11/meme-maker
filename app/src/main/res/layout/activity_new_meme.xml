@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,19 +22,21 @@
 
         <Button
             android:id="@+id/gallery_button"
+            style="@style/Button.Primary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/Button.Primary"
-            android:text="From gallery"/>
+            android:text="From gallery"
+            android:textColor="@android:color/black" />
 
         <Button
             android:id="@+id/camera_button"
+            style="@style/Button.Primary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/Button.Primary"
-            android:text="Take photo"/>
+            android:text="Take photo"
+            android:textColor="@android:color/black" />
 
     </LinearLayout>
 
@@ -47,38 +50,49 @@
             android:id="@+id/image_thumbnail"
             android:layout_width="match_parent"
             android:scaleType="fitCenter"
-            android:src="@drawable/shut_up_and_take_my_money"
+            android:src="@drawable/meme"
             android:layout_height="200dp"/>
 
         <EditText
             android:id="@+id/top_text_input"
             android:layout_width="match_parent"
-            android:background="@android:color/transparent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:hint="Top Text"
             android:layout_alignTop="@id/image_thumbnail"
-        />
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:hint="Top Text"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic" />
 
         <EditText
             android:id="@+id/bottom_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Bottom Text"
-            android:gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/image_thumbnail"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
             android:background="@android:color/transparent"
-            android:layout_alignBottom="@id/image_thumbnail"/>
+            android:gravity="center_horizontal"
+            android:hint="Bottom Text"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/bottom_text_input"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            app:srcCompat="@drawable/ic_logo" />
     </RelativeLayout>
 
     <Button
         android:id="@+id/save_button"
+        style="@style/Button.Primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save"
-        style="@style/Button.Primary"/>
+        android:textColor="@android:color/black" />
 
 </LinearLayout>
